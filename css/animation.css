@@ -1,0 +1,88 @@
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 250px;
+    top: 100px;
+  }
+  100% {
+    left: 500px;
+    top: 0;
+  }
+}
+.stage {
+  background: lightblue;
+  border-radius: 6px;
+  height: 200px;
+  position: relative;
+  width: 650px;
+}
+.stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.stage:active .ball {
+  animation-play-state: paused;
+}
+.ball {
+  background: yellow;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+@keyframes slide2 {
+  0% {
+    left: 250px;
+    top: 0;
+  }
+  25% {
+    left: 250px;
+    top: 100px;
+  }
+  30% {
+    left: 250px;
+    top: 75px;
+  }
+  50% {
+    left: 250px;
+    top: 100px;
+  }
+  75% {
+    left: 250px;
+    top: 75px;
+  }
+  80% {
+    left: 250px;
+    top: 100px;
+  }
+  100% {
+    left: 250px;
+    top: 0;
+  }
+}
+.stage2 {
+  background: lightblue;
+  border-radius: 6px;
+  height: 200px;
+  position: relative;
+  width: 650px;
+}
+.stage2:hover .ball {
+  animation-name: slide2;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.stage2:active .ball {
+  animation-play-state: paused;
+}
